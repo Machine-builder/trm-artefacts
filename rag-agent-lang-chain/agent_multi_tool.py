@@ -45,7 +45,7 @@ def get_current_date():
 
 from langchain.agents import create_agent
 
-tools = [web_search]
+tools = [web_search, get_current_time, get_current_date]
 # System prompt
 prompt = (
     'You have access to multiple tools. One retrieves '
